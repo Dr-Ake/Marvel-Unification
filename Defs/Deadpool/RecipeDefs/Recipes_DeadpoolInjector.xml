@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <RecipeDef>
+    <defName>DP_MakeHealingInjector</defName>
+    <label>make healing factor injector</label>
+    <jobString>crafting a healing factor injector.</jobString>
+    <workAmount>20000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <effectWorking>Clean</effectWorking>
+    <unfinishedThingDef>Unfinished_HealingInjector</unfinishedThingDef>
+    <skillRequirements>
+      <Crafting>12</Crafting>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>Fabrication</li>
+      <li>MedicineProduction</li>
+    </researchPrerequisites>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <DP_HealingInjector>1</DP_HealingInjector>
+    </products>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>DP_AdministerHealingInjector</defName>
+    <label>administer healing factor injector</label>
+    <workerClass>DeadpoolsHealingFactor.DP_Recipe_AdministerHealingInjector</workerClass>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <anesthetize>true</anesthetize>
+    <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+    <targetsBodyPart>false</targetsBodyPart>
+    <workAmount>800</workAmount>
+    <workSkill>Medicine</workSkill>
+    <skillRequirements>
+      <Medicine>6</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DP_HealingInjector</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <addsHediff>DP_HealingFactor</addsHediff>
+    <effectWorking>Clean</effectWorking>
+  </RecipeDef>
+</Defs>
+
+

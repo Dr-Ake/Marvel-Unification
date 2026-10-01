@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <Drake_MakeHulkSerumInjector.label>make hulk serum injector</Drake_MakeHulkSerumInjector.label>
+  <Drake_MakeHulkSerumInjector.jobString>crafting a hulk serum injector.</Drake_MakeHulkSerumInjector.jobString>
+
+  <Drake_AdministerHulkSerum.label>administer hulk serum injector</Drake_AdministerHulkSerum.label>
+</LanguageData>

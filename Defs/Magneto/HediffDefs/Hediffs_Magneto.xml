@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>Magneto_Magnetism</defName>
+    <label>magneto gene</label>
+    <description>This pawn can bend metallic objects to their will, disarming enemies, lifting light mechanized units off the ground, and launching collected debris as lethal shrapnel.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <tendable>false</tendable>
+    <stages>
+      <li />
+    </stages>
+    <comps>
+      <li Class="MagnetoXGene.HediffCompProperties_Magnetism">
+        <launchCooldownSeconds>5</launchCooldownSeconds>
+      </li>
+    </comps>
+  </HediffDef>
+</Defs>

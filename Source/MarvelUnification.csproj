@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>MarvelUnification</AssemblyName>
+    <RootNamespace>MarvelUnification</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>../Assemblies/</OutputPath>
+    <RimWorldDir Condition="'$(RimWorldDir)' == ''">$(MSBuildThisFileDirectory)../../..</RimWorldDir>
+    <HarmonyPath Condition="'$(HarmonyPath)' == ''">$(RimWorldDir)/../../workshop/content/294100/2009463077/Current/Assemblies/0Harmony.dll</HarmonyPath>
+    <Nullable>disable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Deterministic>true</Deterministic>
+    <NoWarn>CS0649;CS8632</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Modules/**/*.cs;Shared/**/*.cs;Properties/AssemblyInfo.cs" />
+    <Reference Include="$(RimWorldDir)/RimWorldWin64_Data/Managed/Assembly-CSharp.dll;$(RimWorldDir)/RimWorldWin64_Data/Managed/UnityEngine*.dll;$(HarmonyPath)">
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

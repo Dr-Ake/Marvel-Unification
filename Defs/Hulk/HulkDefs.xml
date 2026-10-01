@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+    <defName>Drake_BruceBanner</defName>
+    <description>This pawn carries a volatile gamma bond and can unleash Hulk form at will.</description>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>gamma host</label>
+        <description>This pawn carries a volatile gamma bond and can unleash Hulk form at will.</description>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <HediffDef>
+    <defName>Drake_HulkIdentity</defName>
+    <label>gamma host bond</label>
+    <description>This pawn can transform between their normal human state and Hulk form.</description>
+    <hediffClass>Verse.HediffWithComps</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <tendable>false</tendable>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="Drake.Hulk.HediffCompProperties_HulkIdentity" />
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Drake_HulkForm</defName>
+    <label>hulk form</label>
+    <description>Gamma rage is flooding this pawn with strength, speed, and rapid healing.</description>
+    <hediffClass>Verse.HediffWithComps</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <tendable>false</tendable>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <label>rampaging</label>
+        <minSeverity>0.00</minSeverity>
+        <statOffsets>
+          <MoveSpeed>2.60</MoveSpeed>
+          <CarryingCapacity>140</CarryingCapacity>
+          <MeleeHitChance>0.22</MeleeHitChance>
+          <MeleeDamageFactor>3.25</MeleeDamageFactor>
+          <MeleeCooldownFactor>-0.18</MeleeCooldownFactor>
+          <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+          <ArmorRating_Heat>0.60</ArmorRating_Heat>
+          <IncomingDamageFactor>-0.15</IncomingDamageFactor>
+          <PainShockThreshold>18.00</PainShockThreshold>
+        </statOffsets>
+      </li>
+      <li>
+        <label>worldbreaker</label>
+        <minSeverity>0.45</minSeverity>
+        <statOffsets>
+          <MoveSpeed>7.50</MoveSpeed>
+          <CarryingCapacity>320</CarryingCapacity>
+          <MeleeHitChance>0.75</MeleeHitChance>
+          <MeleeDamageFactor>11.00</MeleeDamageFactor>
+          <MeleeCooldownFactor>-0.55</MeleeCooldownFactor>
+          <ArmorRating_Blunt>3.80</ArmorRating_Blunt>
+          <ArmorRating_Sharp>3.80</ArmorRating_Sharp>
+          <ArmorRating_Heat>2.80</ArmorRating_Heat>
+          <IncomingDamageFactor>-0.60</IncomingDamageFactor>
+          <PainShockThreshold>250.00</PainShockThreshold>
+        </statOffsets>
+      </li>
+      <li>
+        <label>unstoppable</label>
+        <minSeverity>0.80</minSeverity>
+        <statOffsets>
+          <MoveSpeed>15.00</MoveSpeed>
+          <CarryingCapacity>750</CarryingCapacity>
+          <MeleeHitChance>1.25</MeleeHitChance>
+          <MeleeDamageFactor>24.00</MeleeDamageFactor>
+          <MeleeCooldownFactor>-0.75</MeleeCooldownFactor>
+          <MeleeDodgeChance>0.60</MeleeDodgeChance>
+          <ArmorRating_Blunt>8.50</ArmorRating_Blunt>
+          <ArmorRating_Sharp>8.50</ArmorRating_Sharp>
+          <ArmorRating_Heat>6.00</ArmorRating_Heat>
+          <IncomingDamageFactor>-0.92</IncomingDamageFactor>
+          <PainShockThreshold>9999.00</PainShockThreshold>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="Drake.Hulk.HediffCompProperties_HulkForm">
+        <ticksPerPulse>45</ticksPerPulse>
+        <healPerPulse>3.00</healPerPulse>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Drake_HulkRecoveryComa</defName>
+    <label>gamma recovery coma</label>
+    <description>This pawn is recovering after forcing their way back through the Green Door.</description>
+    <hediffClass>Verse.HediffWithComps</hediffClass>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <tendable>false</tendable>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.55,1.00,0.45)</defaultLabelColor>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>5000</disappearsAfterTicks>
+        <showRemainingTime>true</showRemainingTime>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <label>recovering</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.05</setMax>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0.00</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0.00</setMax>
+          </li>
+          <li>
+            <capacity>Talking</capacity>
+            <setMax>0.00</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Drake_HulkRegrowing</defName>
+    <hediffClass>Verse.HediffWithComps</hediffClass>
+    <label>gamma regrowing</label>
+    <description>This body part is rebuilding itself under intense gamma regeneration.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.18,0.78,0.22)</defaultLabelColor>
+    <comps>
+      <li Class="Drake.Hulk.HediffCompProperties_HulkRegrowing" />
+    </comps>
+    <stages>
+      <li>
+        <label>stitching</label>
+        <becomeVisible>true</becomeVisible>
+        <partEfficiencyOffset>-1.0</partEfficiencyOffset>
+      </li>
+      <li>
+        <label>growing</label>
+        <becomeVisible>true</becomeVisible>
+        <partEfficiencyOffset>-1.0</partEfficiencyOffset>
+        <minSeverity>0.10</minSeverity>
+      </li>
+      <li>
+        <label>shaping</label>
+        <becomeVisible>true</becomeVisible>
+        <partEfficiencyOffset>-0.75</partEfficiencyOffset>
+        <minSeverity>0.50</minSeverity>
+      </li>
+      <li>
+        <label>developing</label>
+        <becomeVisible>true</becomeVisible>
+        <partEfficiencyOffset>-0.50</partEfficiencyOffset>
+        <minSeverity>0.75</minSeverity>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>Drake_HulkAdjusting</defName>
+    <label>gamma adjusting</label>
+    <description>This freshly restored body part is still settling in.</description>
+    <isBad>false</isBad>
+    <defaultLabelColor>(0.72,1.00,0.72)</defaultLabelColor>
+    <stages>
+      <li>
+        <partEfficiencyOffset>-0.10</partEfficiencyOffset>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>20000</min>
+          <max>60000</max>
+        </disappearsAfterTicks>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef ParentName="PawnFlyerBase">
+    <defName>Drake_HulkGammaLeapFlyer</defName>
+    <label>gamma leap</label>
+    <thingClass>Drake.Hulk.HulkGammaLeapFlyer</thingClass>
+    <pawnFlyer>
+      <flightDurationMin>0.90</flightDurationMin>
+      <flightSpeed>22</flightSpeed>
+      <heightFactor>5.25</heightFactor>
+      <shadowTexPath>Things/Skyfaller/SkyfallerShadowCircle</shadowTexPath>
+    </pawnFlyer>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGrenadeProjectile">
+    <defName>Drake_HulkBoulderProjectile</defName>
+    <label>boulder</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/LauncherShot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>520</damageAmountBase>
+      <speed>24</speed>
+      <arcHeightFactor>2.6</arcHeightFactor>
+      <shadowSize>0.75</shadowSize>
+      <explosionDelay>0</explosionDelay>
+      <explosionRadius>4.60</explosionRadius>
+      <explosionDamageFalloff>false</explosionDamageFalloff>
+      <screenShakeFactor>1.60</screenShakeFactor>
+      <explosionChanceToStartFire>0</explosionChanceToStartFire>
+      <soundImpact>ThumpCannon_Impact</soundImpact>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="DoorBase">
+    <defName>Drake_HulkGreenDoor</defName>
+    <label>green door</label>
+    <description>An impossible green door radiating gamma static.</description>
+    <thingClass>Drake.Hulk.HulkGreenDoorBuilding</thingClass>
+    <stuffCategories Inherit="False" />
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <designationCategory Inherit="False" />
+    <comps Inherit="False" />
+    <selectable>false</selectable>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MaxHitPoints>1</MaxHitPoints>
+      <Flammability>0</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Building/Door/DoorSimple_Mover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(0.10,0.95,0.26)</color>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Drake_HulkSerumInjector</defName>
+    <label>hulk serum injector</label>
+    <description>A single-use injector loaded with unstable gamma serum. Injecting a colonist permanently gives them the Hulk bond and the ability to transform.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <techLevel>Spacer</techLevel>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <orderedTakeGroup>Drug</orderedTakeGroup>
+    <tradeability>All</tradeability>
+    <tradeTags>
+      <li>ExoticMisc</li>
+      <li>TechSpecialty</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Drugs</li>
+    </thingCategories>
+    <stackLimit>1</stackLimit>
+    <selectable>true</selectable>
+    <useHitPoints>false</useHitPoints>
+    <graphicData>
+      <texPath>Things/Item/IncredibleHulk/HulkSerumInjector</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>4200</MarketValue>
+      <Mass>0.2</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+      <MaxHitPoints>50</MaxHitPoints>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <alwaysHaulable>true</alwaysHaulable>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <defaultNumToIngestAtOnce>1</defaultNumToIngestAtOnce>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Processed</foodType>
+      <baseIngestTicks>100</baseIngestTicks>
+      <humanlikeOnly>true</humanlikeOnly>
+      <chairSearchRadius>0</chairSearchRadius>
+      <ingestSound>Ingest_Pill</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <showIngestFloatOption>false</showIngestFloatOption>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_UseThing" />
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1200</listOrder>
+        <teetotalerCanConsume>true</teetotalerCanConsume>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Usable">
+        <useLabel>Inject {0_label}</useLabel>
+        <useJob>Ingest</useJob>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="Drake.Hulk.CompProperties_UseEffectGiveHulkSerum" />
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Unfinished_HulkSerumInjector</defName>
+    <label>unfinished hulk serum injector</label>
+    <thingClass>UnfinishedThing</thingClass>
+    <category>Item</category>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <useHitPoints>false</useHitPoints>
+    <stackLimit>1</stackLimit>
+    <thingCategories>
+      <li>Unfinished</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedComponent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>Drake_MakeHulkSerumInjector</defName>
+    <label>make hulk serum injector</label>
+    <jobString>crafting a hulk serum injector.</jobString>
+    <workAmount>20000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+    <effectWorking>Clean</effectWorking>
+    <unfinishedThingDef>Unfinished_HulkSerumInjector</unfinishedThingDef>
+    <skillRequirements>
+      <Crafting>12</Crafting>
+    </skillRequirements>
+    <researchPrerequisites>
+      <li>Fabrication</li>
+      <li>MedicineProduction</li>
+    </researchPrerequisites>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineUltratech</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <Drake_HulkSerumInjector>1</Drake_HulkSerumInjector>
+    </products>
+    <recipeUsers>
+      <li>DrugLab</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Drake_AdministerHulkSerum</defName>
+    <label>administer hulk serum injector</label>
+    <workerClass>Drake.Hulk.Recipe_AdministerHulkSerum</workerClass>
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+    <anesthetize>true</anesthetize>
+    <surgerySuccessChanceFactor>1.3</surgerySuccessChanceFactor>
+    <targetsBodyPart>false</targetsBodyPart>
+    <workAmount>800</workAmount>
+    <workSkill>Medicine</workSkill>
+    <skillRequirements>
+      <Medicine>6</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Drake_HulkSerumInjector</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <addsHediff>Drake_HulkIdentity</addsHediff>
+    <effectWorking>Clean</effectWorking>
+  </RecipeDef>
+</Defs>

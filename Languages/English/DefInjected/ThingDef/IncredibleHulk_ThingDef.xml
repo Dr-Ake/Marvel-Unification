@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <Drake_HulkGammaLeapFlyer.label>gamma leap</Drake_HulkGammaLeapFlyer.label>
+  <Drake_HulkBoulderProjectile.label>boulder</Drake_HulkBoulderProjectile.label>
+  <Drake_HulkGreenDoor.label>green door</Drake_HulkGreenDoor.label>
+  <Drake_HulkGreenDoor.description>An impossible green door radiating gamma static.</Drake_HulkGreenDoor.description>
+
+  <Drake_HulkSerumInjector.label>hulk serum injector</Drake_HulkSerumInjector.label>
+  <Drake_HulkSerumInjector.description>A single-use injector loaded with unstable gamma serum. Injecting a colonist permanently gives them the Hulk bond and the ability to transform.</Drake_HulkSerumInjector.description>
+  <Drake_HulkSerumInjector.ingestible.ingestCommandString>Inject {0}</Drake_HulkSerumInjector.ingestible.ingestCommandString>
+  <Drake_HulkSerumInjector.ingestible.ingestReportString>Injecting {0}.</Drake_HulkSerumInjector.ingestible.ingestReportString>
+  <Drake_HulkSerumInjector.comps.2.useLabel>Inject {0_label}</Drake_HulkSerumInjector.comps.2.useLabel>
+
+  <Unfinished_HulkSerumInjector.label>unfinished hulk serum injector</Unfinished_HulkSerumInjector.label>
+</LanguageData>

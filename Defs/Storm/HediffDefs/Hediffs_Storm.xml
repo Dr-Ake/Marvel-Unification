@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>Storm_Gene</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.3, 0.7, 0.9)</defaultLabelColor>
+    <description>A genetic modification that grants the user control over atmospheric conditions. Currently grants enhanced physical capabilities.</description>
+    <label>Storm Gene</label>
+    <isBad>false</isBad>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <stages>
+      <li>
+        <label>active</label>
+        <painFactor>0.0</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>1.1</postFactor>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>1.1</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>1.1</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDefs>
+          <li>Storm_SummonStorm</li>
+          <li>Storm_CallLightning</li>
+          <li>Storm_SummonTornado</li>
+        </abilityDefs>
+      </li>
+    </comps>
+  </HediffDef>
+</Defs>

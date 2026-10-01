@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Cyclops_ControlVisor</defName>
+    <label>ruby-quartz control visor</label>
+    <description>A precision visor built around a ruby-quartz aperture. It does not create optic force; instead, it helps a Cyclops gene carrier contain and shape each release. Mod settings can make the visor mandatory for advanced optic attacks.</description>
+    <techLevel>Spacer</techLevel>
+    <tradeability>Sellable</tradeability>
+    <generateCommonality>0</generateCommonality>
+    <graphicData>
+      <texPath>Things/Apparel/CyclopsVisor/CyclopsVisor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.75,0.75)</drawSize>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <costList>
+      <Plasteel>20</Plasteel>
+      <Gold>10</Gold>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <MarketValue>850</MarketValue>
+      <Mass>0.25</Mass>
+      <Flammability>0.1</Flammability>
+      <ArmorRating_Sharp>0.08</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.20</ArmorRating_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>Fabrication</researchPrerequisite>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>215</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CyclopsVisor/CyclopsVisor</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <drawData>
+        <dataNorth>
+          <layer>-3</layer>
+        </dataNorth>
+      </drawData>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+  </ThingDef>
+</Defs>

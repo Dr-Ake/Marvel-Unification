@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp">
+    <defName>DP_WolverineClawWeapon</defName>
+    <label>claws</label>
+    <description>Retractable adamantium claws that extend from within the user's forearms. They are only meant to be used by the pawn who bears them.</description>
+    <destroyOnDrop>true</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <thingCategories Inherit="False" />
+    <recipeMaker Inherit="False" IsNull="True" />
+    <graphicData>
+      <texPath>Things/Item/Deadpool/WolverineClaws</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.1</Mass>
+    </statBases>
+    <tools>
+      <li Class="Verse.Tool">
+        <label>claw</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>1.5</cooldownTime>
+        <armorPenetration>0.35</armorPenetration>
+        <linkedBodyPartsGroup>Hands</linkedBodyPartsGroup>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>

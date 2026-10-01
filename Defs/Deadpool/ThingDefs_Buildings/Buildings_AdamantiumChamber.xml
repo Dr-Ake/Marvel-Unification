@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>DP_AdamantiumChamber</defName>
+    <label>adamantium infusion chamber</label>
+    <description>A reinforced chamber used to infuse a pawn's skeleton with an ultra-hard alloy. Requires Plasteel loaded before use.</description>
+    <thingClass>DeadpoolsHealingFactor.Building_AdamantiumChamber</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Building/Deadpool/AdamantiumChamber</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <drawerType>RealtimeOnly</drawerType>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <size>(3,3)</size>
+    <selectable>true</selectable>
+    <rotatable>true</rotatable>
+    <pathCost>30</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>60</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>-2</Beauty>
+      <WorkToBuild>8000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>400</Steel>
+      <Plasteel>120</Plasteel>
+      <Uranium>60</Uranium>
+      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <designationCategory>Production</designationCategory>
+    <researchPrerequisites>
+      <li>DP_WeaponX_AdamantiumChamber</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="DeadpoolsHealingFactor.CompProperties_InfusionProgress" />
+      <li Class="CompProperties_Refuelable">
+        <compClass>CompRefuelable</compClass>
+        <fuelFilter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelCapacity>500</fuelCapacity>
+        <autoRefuelPercent>0.99</autoRefuelPercent>
+        <fuelConsumptionRate>0</fuelConsumptionRate>
+        <initialFuelPercent>0</initialFuelPercent>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+        <showFuelGizmo>false</showFuelGizmo>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <fuelLabel>Fuel</fuelLabel>
+      </li>
+    </comps>
+    <!-- remove invalid BuildingProperties fields -->
+  </ThingDef>
+</Defs>
+
+

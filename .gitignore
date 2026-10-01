@@ -1,0 +1,8 @@
+Source/obj/
+Source/bin/
+Source/Tools/runtime/
+*.pdb
+*.user
+.vs/
+__pycache__/
+Releases/

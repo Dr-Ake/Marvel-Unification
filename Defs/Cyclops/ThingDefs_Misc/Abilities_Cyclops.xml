@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AbilityDef>
+    <defName>Cyclops_OpticBlast</defName>
+    <label>optic blast</label>
+    <description>Release a precise pulse of concussive optic force. This basic attack does not require a control visor.</description>
+    <iconPath>UI/Commands/OpticBlast</iconPath>
+    <cooldownTicksRange>120</cooldownTicksRange>
+    <displayOrder>100</displayOrder>
+    <hostile>true</hostile>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1.0</warmupTime>
+      <defaultCooldownTime>0.1</defaultCooldownTime>
+      <range>25.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Shot_ChargeRifle</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>true</canTargetBuildings>
+        <canTargetPlants>true</canTargetPlants>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CyclopsGene.CompProperties_OpticAttack">
+        <mode>Basic</mode>
+        <strainCost>12</strainCost>
+        <armorPenetration>0.45</armorPenetration>
+        <pulseCount>1</pulseCount>
+        <durationTicks>6</durationTicks>
+        <screenShakeIntensity>0.15</screenShakeIntensity>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Cyclops_OpticVolley</defName>
+    <label>optic volley</label>
+    <description>Snap off four rapid, controlled pulses. Each pulse can be intercepted by a pawn or solid obstruction.</description>
+    <iconPath>UI/Commands/OpticVolley</iconPath>
+    <cooldownTicksRange>180</cooldownTicksRange>
+    <displayOrder>110</displayOrder>
+    <hostile>true</hostile>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.2</warmupTime>
+      <defaultCooldownTime>0.5</defaultCooldownTime>
+      <range>19.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Shot_ChargeRifle</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>true</canTargetBuildings>
+        <canTargetPlants>true</canTargetPlants>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CyclopsGene.CompProperties_OpticAttack">
+        <mode>Volley</mode>
+        <strainCost>22</strainCost>
+        <armorPenetration>0.32</armorPenetration>
+        <pulseCount>4</pulseCount>
+        <ticksBetweenPulses>6</ticksBetweenPulses>
+        <durationTicks>28</durationTicks>
+        <screenShakeIntensity>0.2</screenShakeIntensity>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Cyclops_FocusedBeam</defName>
+    <label>focused optic beam</label>
+    <description>Concentrate a sustained long-range beam on the first target or solid obstruction in its path.</description>
+    <iconPath>UI/Commands/FocusedBeam</iconPath>
+    <cooldownTicksRange>720</cooldownTicksRange>
+    <displayOrder>120</displayOrder>
+    <hostile>true</hostile>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <warmupStartSound>Interact_ChargeLance</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1.2</warmupTime>
+      <defaultCooldownTime>1.75</defaultCooldownTime>
+      <range>34.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>ChargeLance_Fire</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>true</canTargetBuildings>
+        <canTargetPlants>true</canTargetPlants>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CyclopsGene.CompProperties_OpticAttack">
+        <mode>Focused</mode>
+        <strainCost>42</strainCost>
+        <armorPenetration>0.9</armorPenetration>
+        <pulseCount>7</pulseCount>
+        <ticksBetweenPulses>15</ticksBetweenPulses>
+        <durationTicks>105</durationTicks>
+        <stunTicks>12</stunTicks>
+        <screenShakeIntensity>0.45</screenShakeIntensity>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Cyclops_FullApertureBlast</defName>
+    <label>full-aperture blast</label>
+    <description>Release every restraint and saturate a massive cone with overwhelming concussive force. This is the strongest optic attack and strikes allies, enemies, plants, items, and structures without distinction.</description>
+    <iconPath>UI/Commands/FullApertureBlast</iconPath>
+    <cooldownTicksRange>2700</cooldownTicksRange>
+    <displayOrder>130</displayOrder>
+    <hostile>true</hostile>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+    <warmupStartSound>Interact_ChargeLance</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>2.5</warmupTime>
+      <defaultCooldownTime>0.75</defaultCooldownTime>
+      <range>18.9</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>Explosion_Thump</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>true</canTargetBuildings>
+        <canTargetPlants>true</canTargetPlants>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CyclopsGene.CompProperties_OpticAttack">
+        <mode>Cone</mode>
+        <strainCost>90</strainCost>
+        <armorPenetration>0.65</armorPenetration>
+        <pulseCount>1</pulseCount>
+        <durationTicks>45</durationTicks>
+        <stunTicks>90</stunTicks>
+        <screenShakeIntensity>1.5</screenShakeIntensity>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

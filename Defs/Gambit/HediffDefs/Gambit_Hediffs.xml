@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>Gambit_DeckHediff</defName>
+    <label>energized card deck</label>
+    <description>A psionic deck of volatile cards orbiting the host,
+      storing charges for Gambit's arsenal.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <label>primed</label>
+      </li>
+    </stages>
+    <comps>
+      <li Class="GambitXGene.Comps.HediffCompProperties_GambitDeck">
+        <maxCards>52</maxCards>
+        <startingCards>52</startingCards>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Gambit_XGene_Hediff</defName>
+    <label>Gambit x-gene</label>
+    <description>A volatile xenogenic graft that floods the host with psionic potential, manifesting as kinetic charge, explosive projectiles, and a restless deck of stored energy.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <stages>
+      <li>
+        <label>stabilized</label>
+      </li>
+    </stages>
+    <comps>
+      <li Class="GambitXGene.Comps.HediffCompProperties_GambitGeneLink" />
+    </comps>
+  </HediffDef>
+</Defs>

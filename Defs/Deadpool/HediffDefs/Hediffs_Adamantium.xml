@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <HediffDef>
+    <defName>DP_AdamantiumSkeleton</defName>
+    <label>adamantium skeleton</label>
+    <description>The subject's skeleton has been infused with an indestructible alloy. Limbs and the head cannot be severed; the skeleton will not burn or decay away, enabling regeneration once the fire stops.</description>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <label>infused</label>
+        <becomeVisible>true</becomeVisible>
+        <painFactor>0.9</painFactor>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>1.05</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>1.05</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>DP_WolverineClaws</defName>
+    <label>adamantium claws</label>
+    <description>Retractable adamantium claws are hidden within the subject's forearms. Extending them equips the claws as a melee weapon, while retracting them tears the user's hands.</description>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <label>retractable</label>
+        <becomeVisible>true</becomeVisible>
+      </li>
+    </stages>
+    <hediffClass>HediffWithComps</hediffClass>
+    <comps>
+      <li Class="DeadpoolsHealingFactor.HediffCompProperties_WolverineClaws" />
+    </comps>
+  </HediffDef>
+</Defs>
+
+

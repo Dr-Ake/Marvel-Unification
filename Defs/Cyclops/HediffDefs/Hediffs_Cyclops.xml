@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>Cyclops_Gene</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Cyclops gene</label>
+    <description>A genetic modification that opens the eyes onto a source of limitless concussive force. The carrier can shape the output into rapid volleys, sustained beams, or a devastating full-aperture blast, optionally using a ruby-quartz visor as a control requirement. The carrier also projects a disciplined command presence.</description>
+    <defaultLabelColor>(1.0, 0.2, 0.2)</defaultLabelColor>
+    <isBad>false</isBad>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <stages>
+      <li>
+        <label>active</label>
+        <painFactor>0.0</painFactor>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <postFactor>1.5</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef>Cyclops_OpticBlast</abilityDef>
+      </li>
+      <li Class="CyclopsGene.HediffCompProperties_GiveCyclopsVolley">
+        <abilityDef>Cyclops_OpticVolley</abilityDef>
+      </li>
+      <li Class="CyclopsGene.HediffCompProperties_GiveCyclopsFocusedBeam">
+        <abilityDef>Cyclops_FocusedBeam</abilityDef>
+      </li>
+      <li Class="CyclopsGene.HediffCompProperties_GiveCyclopsFullAperture">
+        <abilityDef>Cyclops_FullApertureBlast</abilityDef>
+      </li>
+      <li Class="CyclopsGene.HediffCompProperties_OpticController">
+        <maxStrain>100</maxStrain>
+        <leadershipRefreshTicks>60</leadershipRefreshTicks>
+        <leadershipBuffTicks>90</leadershipBuffTicks>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>Cyclops_CommandPresence</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>command presence</label>
+    <description>Working within the disciplined command presence of a Cyclops gene carrier.</description>
+    <defaultLabelColor>(0.95, 0.32, 0.24)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statOffsets>
+          <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+          <AimingDelayFactor>-0.05</AimingDelayFactor>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>90</disappearsAfterTicks>
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+    </comps>
+  </HediffDef>
+</Defs>

@@ -1,0 +1,39 @@
+PASS Unified package active
+PASS Characters compiled into unified assembly
+PASS Unified Harmony patches present: 50
+PASS Every unified Harmony patch applied once
+PASS Required Biotech active
+PASS All eight original settings modules initialized
+PASS Cyclops power definition resolves
+PASS Cyclops receives original power
+PASS Cyclops gizmos resolve
+PASS Deadpool power definition resolves
+PASS Deadpool receives original power
+PASS Deadpool gizmos resolve
+PASS Gambit power definition resolves
+PASS Gambit receives original power
+PASS Gambit gizmos resolve
+PASS Hulk power definition resolves
+PASS Hulk receives original power
+PASS Hulk gizmos resolve
+PASS JeanGrey power definition resolves
+PASS JeanGrey receives original power
+PASS JeanGrey gizmos resolve
+PASS Magneto power definition resolves
+PASS Magneto receives original power
+PASS Magneto gizmos resolve
+PASS MultipleMan power definition resolves
+PASS MultipleMan receives original power
+PASS MultipleMan gizmos resolve
+PASS Nightcrawler power definition resolves
+PASS Nightcrawler receives original power
+PASS Nightcrawler gizmos resolve
+PASS Storm power definition resolves
+PASS Storm receives original power
+PASS Storm gizmos resolve
+PASS Multiple Man creates registered dupe
+PASS Multiple Man copies skill and equipment
+PASS Duplicate cannot duplicate itself
+PASS Multiple Man dismisses clone
+PASS Multiple Man dupe self-dismiss works
+DUPLICATION SUITE COMPLETE

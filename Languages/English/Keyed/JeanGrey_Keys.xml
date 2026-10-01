@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Abilties -->
+  <JG_TelekineticPush_Label>Telekinetic Push</JG_TelekineticPush_Label>
+  <JG_TelekineticPush_Desc>Violently repel enemies using focused telekinetic force.</JG_TelekineticPush_Desc>
+  
+  <JG_MolecularDeconstruction_Label>Molecular Deconstruction</JG_MolecularDeconstruction_Label>
+  <JG_MolecularDeconstruction_Desc>Unleash the Phoenix to deconstruct matter at the target location.</JG_MolecularDeconstruction_Desc>
+
+</LanguageData>

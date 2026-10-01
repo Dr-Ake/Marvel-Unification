@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Retained so projectiles already present in old saves can finish safely. New attacks use Cyclops_OpticBlastEffect. -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_OpticBlast</defName>
+    <label>legacy optic blast</label>
+    <graphicData>
+      <texPath>Effects/OpticBeamCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Blunt</damageDef>
+      <damageAmountBase>25</damageAmountBase>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Cyclops_OpticBlastEffect</defName>
+    <label>optic blast effect</label>
+    <thingClass>CyclopsGene.OpticBlastEffect</thingClass>
+    <category>Ethereal</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <selectable>false</selectable>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <saveCompressible>false</saveCompressible>
+  </ThingDef>
+</Defs>

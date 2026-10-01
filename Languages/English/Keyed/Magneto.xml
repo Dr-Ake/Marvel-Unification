@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MagnetoSettings_MaxOrbit>Maximum orbiting items: {0}</MagnetoSettings_MaxOrbit>
+  <MagnetoSettings_MagneticRadius>Magnetic grab radius: {0} cells</MagnetoSettings_MagneticRadius>
+  <MagnetoSettings_DamageMultiplier>Launch damage multiplier: {0}</MagnetoSettings_DamageMultiplier>
+  <MagnetoSettings_OrbitSpeed>Orbit speed: {0} deg/tick</MagnetoSettings_OrbitSpeed>
+  <MagnetoSettings_OrbitDistance>Orbit distance scale: {0}x</MagnetoSettings_OrbitDistance>
+  <MagnetoSettings_LaunchCooldown>Launch cooldown: {0} sec</MagnetoSettings_LaunchCooldown>
+  <Magneto_Gizmo_MagneticGrabLabel>Magnetic Grab</Magneto_Gizmo_MagneticGrabLabel>
+  <Magneto_Gizmo_MagneticGrabDesc>Select a metallic item within {0} cells to pull it into orbit. Up to {1} items can orbit at once.</Magneto_Gizmo_MagneticGrabDesc>
+  <Magneto_Gizmo_PawnUnavailable>Pawn must be conscious and on the map.</Magneto_Gizmo_PawnUnavailable>
+  <Magneto_Gizmo_LaunchLabel>Launch</Magneto_Gizmo_LaunchLabel>
+  <Magneto_Gizmo_LaunchDesc>Hurl an orbiting item toward the target, dealing high impact damage that scales with mass and material.</Magneto_Gizmo_LaunchDesc>
+  <Magneto_Gizmo_DropLabel>Drop Orbiters</Magneto_Gizmo_DropLabel>
+  <Magneto_Gizmo_DropDesc>Release every orbiting item, dropping them around the caster.</Magneto_Gizmo_DropDesc>
+
+  <Magneto_Message_LaunchOnCooldown>Launch systems recharging.</Magneto_Message_LaunchOnCooldown>
+  <Magneto_Message_NoOrbiters>No metallic items are orbiting right now.</Magneto_Message_NoOrbiters>
+  <Magneto_Message_DisarmedWeapon>{0} wrenched {2} out of {1}'s hands!</Magneto_Message_DisarmedWeapon>
+  <Magneto_Message_GeneInjected>{0} feels magnetic currents awaken within.</Magneto_Message_GeneInjected>
+  <Magneto_Message_TargetOutOfRange>That item is outside the magnetic field.</Magneto_Message_TargetOutOfRange>
+  <Magneto_Message_TargetNotMetallic>{0} contains no metal to seize.</Magneto_Message_TargetNotMetallic>
+  <Magneto_Message_OrbitFull>Orbit already holds as many items as it can.</Magneto_Message_OrbitFull>
+  <Magneto_Message_TargetNotItem>Only loose items can be grabbed.</Magneto_Message_TargetNotItem>
+  <Magneto_Message_TargetUnavailable>That item can't be grabbed right now.</Magneto_Message_TargetUnavailable>
+  <Magneto_Message_TargetNoWeapon>{0} has no metallic weapon to seize.</Magneto_Message_TargetNoWeapon>
+</LanguageData>

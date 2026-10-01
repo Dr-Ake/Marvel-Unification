@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>Nightcrawler_Teleportation</defName>
+    <label>teleportation</label>
+    <description>Pawns with this mutation can blink directly to their goals when teleportation mode is enabled.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li />
+    </stages>
+    <comps>
+      <li Class="NightcrawlerTeleportation.HediffCompProperties_TeleportToggle">
+        <defaultEnabled>false</defaultEnabled>
+        <checkFog>true</checkFog>
+        <playSound>false</playSound>
+        <allowWhileDrafted>true</allowWhileDrafted>
+        <requireConscious>true</requireConscious>
+        <teleportDistanceThreshold>10</teleportDistanceThreshold>
+      </li>
+    </comps>
+  </HediffDef>
+</Defs>

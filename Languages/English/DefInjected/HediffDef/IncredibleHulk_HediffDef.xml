@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <Drake_HulkIdentity.label>gamma host bond</Drake_HulkIdentity.label>
+  <Drake_HulkIdentity.description>This pawn can transform between their normal human state and Hulk form.</Drake_HulkIdentity.description>
+
+  <Drake_HulkForm.label>hulk form</Drake_HulkForm.label>
+  <Drake_HulkForm.description>Gamma rage is flooding this pawn with strength, speed, and rapid healing.</Drake_HulkForm.description>
+  <Drake_HulkForm.stages.0.label>rampaging</Drake_HulkForm.stages.0.label>
+  <Drake_HulkForm.stages.1.label>worldbreaker</Drake_HulkForm.stages.1.label>
+  <Drake_HulkForm.stages.2.label>unstoppable</Drake_HulkForm.stages.2.label>
+
+  <Drake_HulkRecoveryComa.label>gamma recovery coma</Drake_HulkRecoveryComa.label>
+  <Drake_HulkRecoveryComa.description>This pawn is recovering after forcing their way back through the Green Door.</Drake_HulkRecoveryComa.description>
+  <Drake_HulkRecoveryComa.stages.0.label>recovering</Drake_HulkRecoveryComa.stages.0.label>
+
+  <Drake_HulkRegrowing.label>gamma regrowing</Drake_HulkRegrowing.label>
+  <Drake_HulkRegrowing.description>This body part is rebuilding itself under intense gamma regeneration.</Drake_HulkRegrowing.description>
+  <Drake_HulkRegrowing.stages.0.label>stitching</Drake_HulkRegrowing.stages.0.label>
+  <Drake_HulkRegrowing.stages.1.label>growing</Drake_HulkRegrowing.stages.1.label>
+  <Drake_HulkRegrowing.stages.2.label>shaping</Drake_HulkRegrowing.stages.2.label>
+  <Drake_HulkRegrowing.stages.3.label>developing</Drake_HulkRegrowing.stages.3.label>
+
+  <Drake_HulkAdjusting.label>gamma adjusting</Drake_HulkAdjusting.label>
+  <Drake_HulkAdjusting.description>This freshly restored body part is still settling in.</Drake_HulkAdjusting.description>
+</LanguageData>

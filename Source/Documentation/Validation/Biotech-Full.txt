@@ -1,0 +1,269 @@
+PASS Unified package active
+PASS Characters compiled into unified assembly
+PASS Unified Harmony patches present: 50
+PASS Every unified Harmony patch applied once
+PASS Required Biotech active
+PASS All eight original settings modules initialized
+PASS Cyclops power definition resolves
+PASS Cyclops receives original power
+PASS Cyclops gizmos resolve
+PASS Deadpool power definition resolves
+PASS Deadpool receives original power
+PASS Deadpool gizmos resolve
+PASS Gambit power definition resolves
+PASS Gambit receives original power
+PASS Gambit gizmos resolve
+PASS Hulk power definition resolves
+PASS Hulk receives original power
+PASS Hulk gizmos resolve
+PASS JeanGrey power definition resolves
+PASS JeanGrey receives original power
+PASS JeanGrey gizmos resolve
+PASS Magneto power definition resolves
+PASS Magneto receives original power
+PASS Magneto gizmos resolve
+PASS MultipleMan power definition resolves
+PASS MultipleMan receives original power
+PASS MultipleMan gizmos resolve
+PASS Nightcrawler power definition resolves
+PASS Nightcrawler receives original power
+PASS Nightcrawler gizmos resolve
+PASS Storm power definition resolves
+PASS Storm receives original power
+PASS Storm gizmos resolve
+PASS Cyclops_Injector accepts clean recipient
+PASS Cyclops_Injector consumed once through native use
+PASS Cyclops_Injector grants intended power
+PASS Cyclops_Injector rejects duplicate power
+PASS DP_HealingInjector accepts clean recipient
+PASS DP_HealingInjector consumed once through native use
+PASS DP_HealingInjector grants intended power
+PASS DP_HealingInjector rejects duplicate power
+PASS Gambit_Injector accepts clean recipient
+PASS Gambit_Injector consumed once through native use
+PASS Gambit_Injector grants intended power
+PASS Gambit_Injector rejects duplicate power
+PASS Drake_HulkSerumInjector accepts clean recipient
+PASS Drake_HulkSerumInjector consumed once through native use
+PASS Drake_HulkSerumInjector grants intended power
+PASS Hulk serum rejects second bonding
+PASS JG_PhoenixSerum consumed through native ingestion
+PASS JG_PhoenixSerum grants intended power
+PASS Magneto_MagnetoInjector accepts clean recipient
+PASS Magneto_MagnetoInjector consumed once through native use
+PASS Magneto_MagnetoInjector grants intended power
+PASS Magneto_MagnetoInjector rejects duplicate power
+PASS MM_MultipleManInjector accepts clean recipient
+PASS MM_MultipleManInjector consumed once through native use
+PASS MM_MultipleManInjector grants intended power
+PASS MM_MultipleManInjector rejects duplicate power
+PASS Nightcrawler_TeleportationInjector accepts clean recipient
+PASS Nightcrawler_TeleportationInjector consumed once through native use
+PASS Nightcrawler_TeleportationInjector grants intended power
+PASS Nightcrawler_TeleportationInjector rejects duplicate power
+PASS Storm_GeneInjector consumed through native ingestion
+PASS Storm_GeneInjector grants intended power
+PASS All crafting and administration recipes loaded: 20
+PASS Drake_MakeHulkSerumInjector recipe worker resolves
+PASS Drake_MakeHulkSerumInjector product constructible
+PASS Drake_AdministerHulkSerum recipe worker resolves
+PASS Make_CyclopsInjector recipe worker resolves
+PASS Make_CyclopsInjector product constructible
+PASS Administer_CyclopsInjector recipe worker resolves
+PASS DP_MakeHealingInjector recipe worker resolves
+PASS DP_MakeHealingInjector product constructible
+PASS DP_AdministerHealingInjector recipe worker resolves
+PASS Gambit_MakeInjector recipe worker resolves
+PASS Gambit_MakeInjector product constructible
+PASS Gambit_AdministerInjector recipe worker resolves
+PASS Magneto_MakeInjector recipe worker resolves
+PASS Magneto_MakeInjector product constructible
+PASS Magneto_AdministerInjector recipe worker resolves
+PASS MM_MakeMultipleManInjector recipe worker resolves
+PASS MM_MakeMultipleManInjector product constructible
+PASS MM_AdministerMultipleManInjector recipe worker resolves
+PASS Nightcrawler_MakeTeleportationInjector recipe worker resolves
+PASS Nightcrawler_MakeTeleportationInjector product constructible
+PASS Nightcrawler_AdministerTeleportationInjector recipe worker resolves
+PASS Storm_MakeGeneInjector recipe worker resolves
+PASS Storm_MakeGeneInjector product constructible
+PASS Make_JG_PhoenixSerum recipe worker resolves
+PASS Make_JG_PhoenixSerum product constructible
+PASS Make_JG_PhoenixSerumBulk recipe worker resolves
+PASS Make_JG_PhoenixSerumBulk product constructible
+PASS Make_Cyclops_ControlVisor recipe worker resolves
+PASS Make_Cyclops_ControlVisor product constructible
+PASS Administer_Drake_HulkSerumInjector recipe worker resolves
+PASS Administer_JG_PhoenixSerum recipe worker resolves
+PASS Administer_CyclopsInjector successful surgery grants intended power
+PASS DP_AdministerHealingInjector successful surgery grants intended power
+PASS Gambit_AdministerInjector successful surgery grants intended power
+PASS Magneto_AdministerInjector successful surgery grants intended power
+PASS MM_AdministerMultipleManInjector successful surgery grants intended power
+PASS Nightcrawler_AdministerTeleportationInjector successful surgery grants intended power
+PASS Native graphic resolves: Drake_HulkBoulderProjectile
+PASS Native graphic resolves: Drake_HulkGreenDoor
+PASS Native graphic resolves: Drake_HulkSerumInjector
+PASS Native graphic resolves: Unfinished_HulkSerumInjector
+PASS Native graphic resolves: JG_PhoenixSerum
+PASS Native graphic resolves: Mote_PhoenixFlash
+PASS Native graphic resolves: Mote_PsionicBlast
+PASS Native graphic resolves: Mote_PsionicSmoke
+PASS Native graphic resolves: Mote_PhoenixResurrection
+PASS Native graphic resolves: Cyclops_Injector
+PASS Native graphic resolves: Cyclops_ControlVisor
+PASS Native graphic resolves: Bullet_OpticBlast
+PASS Native graphic resolves: DP_AdamantiumChamber
+PASS Native graphic resolves: DP_HealingInjector
+PASS Native graphic resolves: Unfinished_HealingInjector
+PASS Native graphic resolves: DP_WolverineClawWeapon
+PASS Native graphic resolves: Gambit_Injector
+PASS Native graphic resolves: Unfinished_GambitInjector
+PASS Native graphic resolves: Magneto_MagnetoInjector
+PASS Native graphic resolves: Unfinished_MagnetoInjector
+PASS Native graphic resolves: Magneto_ProjectileOrbitItem
+PASS Native graphic resolves: Magneto_OrbitingVisual
+PASS Native graphic resolves: MM_MultipleManInjector
+PASS Native graphic resolves: Unfinished_MultipleManInjector
+PASS Native graphic resolves: Nightcrawler_TeleportationInjector
+PASS Native graphic resolves: Unfinished_TeleportationInjector
+PASS Native graphic resolves: Storm_GeneInjector
+PASS Native graphic resolves: Storm_Tornado
+PASS Native graphic resolves: Unfinished_StormInjector
+PASS Native graphic resolves: Blueprint_DP_AdamantiumChamber
+PASS Cyclops_OpticBlast activates
+PASS Cyclops_OpticBlast consumes shared strain
+PASS Cyclops_OpticBlast applies concussive damage
+PASS Cyclops_OpticVolley activates
+PASS Cyclops_OpticVolley consumes shared strain
+PASS Cyclops_OpticVolley applies concussive damage
+PASS Cyclops_FocusedBeam activates
+PASS Cyclops_FocusedBeam consumes shared strain
+PASS Cyclops_FocusedBeam applies concussive damage
+PASS Cyclops_FullApertureBlast activates
+PASS Cyclops_FullApertureBlast consumes shared strain
+PASS Cyclops_FullApertureBlast applies concussive damage
+PASS Cyclops exhausted strain blocks firing
+PASS Cyclops strain recovers
+PASS Cyclops leadership aura reaches allies
+PASS Gambit graft creates live deck
+PASS Gambit throw activates
+PASS Gambit throw consumes exactly one card
+PASS Gambit card explosion damages target
+PASS Gambit pickup activates
+PASS Gambit volley drains deck
+PASS Gambit volley damages target
+PASS Gambit deck recharges after volley
+PASS Gambit touch charge damages adjacent target
+PASS Gambit kinetic toggle changes live state
+PASS Gambit kinetic detonation damages target
+PASS Gambit immune to own explosive damage
+PASS Hulk transformation grants form
+PASS Hulk transformed controls present
+PASS Hulk per-pawn color saved
+PASS Hulk reverts original body
+PASS Hulk color resets
+PASS Hulk clap executes
+PASS Hulk clap destroys nearby structure
+PASS Hulk boulder launches
+PASS Hulk boulder impacts structure
+PASS Hulk gamma leap launches flyer
+PASS Hulk gamma leap lands at target
+PASS Hulk regeneration repairs real wound
+PASS Hulk restores missing arm
+PASS Magneto grabs metallic stack
+PASS Magneto orbits one item from stack
+PASS Magneto grab, launch and drop controls available
+PASS Magneto drop restores physical item
+PASS Magneto rejects nonmetallic item
+PASS Magneto payload launches
+PASS Magneto payload damages target
+PASS Magneto launch releases held payload
+PASS Magneto removes target's metallic weapon
+PASS Multiple Man creates registered dupe
+FAIL Multiple Man copies skill and equipment
+FAIL Multiple Man duplication: System.Exception: Multiple Man copies skill and equipment
+[Ref 5D668C04]
+  at MarvelUnification.Validation.LiveSuite.Check (System.Boolean condition, System.String message) [0x00029] in <7c1961563c6743c89e636428ed8c9926>:0 
+  at MarvelUnification.Validation.LiveSuite+<>c__DisplayClass30_0.<MultipleManChecks>b__0 () [0x000ee] in <7c1961563c6743c89e636428ed8c9926>:0 
+  at MarvelUnification.Validation.LiveSuite.Test (System.String name, System.Action action) [0x00000] in <7c1961563c6743c89e636428ed8c9926>:0 
+PASS Nightcrawler teleport comp resolves
+PASS Nightcrawler toggle enables movement override
+PASS Nightcrawler valid destination accepted
+PASS Nightcrawler native goto pathing teleports to destination
+PASS Nightcrawler toggle restores normal pathing
+PASS Nightcrawler rejects invalid destination
+PASS Storm map component created
+PASS Storm weather choice: Clear
+PASS Storm weather choice: Rain
+PASS Storm weather choice: RainyThunderstorm
+PASS Storm weather choice: FoggyRain
+PASS Storm weather choice: SnowGentle
+PASS Storm weather choice: SnowHard
+PASS Storm summon ability invokes weather
+PASS Storm duration expires cleanly
+PASS Storm called lightning damages target cell
+PASS Storm summons real tornado
+PASS Storm immune to tornado scratch
+PASS Jean Grey telekinetic push damages target
+PASS Jean Grey molecular deconstruction damages target
+PASS Jean Grey psionic shield blocks projectile
+PASS Deadpool healing repairs real wound through tick patch
+PASS Deadpool healing cures disease
+PASS Deadpool healing removes permanent scar
+PASS Deadpool regrows missing arm
+PASS Deadpool mood and trait effects apply
+PASS Deadpool healing respects excluded condition
+PASS Deadpool healing setting disables healing
+PASS Adamantium chamber rejects insufficient fuel
+PASS Adamantium native job starts infusion and hides subject
+PASS Adamantium native job grants skeleton and claws
+PASS Adamantium infusion consumes fuel and restores subject
+PASS Wolverine extends claws and replaces held weapon
+PASS Wolverine retracts claws and restores prior weapon
+PASS Wolverine retraction wounds hands
+PASS Adamantium skeleton prevents protected limb removal
+PASS Deadpool death creates real corpse
+PASS Deadpool corpse healing resurrects pawn
+PASS Kidnapping fixture has downed healing-factor guest
+INFO kidnapping guest=True reachable=True faction=The Sinners actual=ProtectedGuest
+PASS Disabled kidnapping protection retains native candidate
+PASS Enabled kidnapping protection excludes healing-factor candidate
+PASS Hulk manual form timer expires and reverts
+PASS Hulk hostile carry triggers emergency rage
+PASS Hulk forced rage timer expires and reverts
+PASS Hulk death triggers emergency resurrection and transformation
+PASS Hulk Green Door fixture retains corpse
+PASS Destroyed Hulk corpse schedules Green Door return
+PASS Hulk Green Door manifests through native manager
+PASS Hulk returns from Green Door
+INFO GreenDoor state Green Door state for Hulk: pending=no, dead=no, discarded=no, corpse=no, map=Colony. rage=False hediffs=Drake_HulkIdentity,Drake_HulkRecoveryComa
+PASS Hulk Green Door return ends in recovery coma
+PASS Gambit_XGene carrier accepted by native gene extractor
+PASS Gambit_XGene extraction creates native genepack
+PASS Gambit_XGene native xenogerm implantation retains recipient identity
+PASS Gambit implanted gene grants deck and abilities
+PASS Gambit gene removal removes linked powers
+PASS MM_MultipleManGene retains native archite extraction restriction
+PASS MM_MultipleManGene native xenogerm implantation retains recipient identity
+PASS Multiple Man implanted gene grants duplication
+PASS Multiple Man alternate injector mode grants hediff powers
+PASS Multiple Man undrafted duplicate expires
+PASS Multiple Man drafted duplicate retains lifetime
+PASS Multiple Man duplicate cap enforced
+PASS Multiple Man clone XP permission enforced
+PASS Multiple Man move-speed multiplier changes clone stat
+PASS Multiple Man duplicate death erases clone
+PASS Storm immune during real lightning event
+PASS Storm wind deflection rejects incoming projectile at configured certainty
+PASS Jean Grey death triggers Phoenix resurrection with cooldown
+PASS Settings UI renders: Cyclops X-Gene
+PASS Settings UI renders: Deadpool's Healing Factor
+PASS Settings UI renders: Gambit X-Gene
+PASS Settings UI renders: Incredible Hulk
+PASS Settings UI renders: Jean Grey - Phoenix Force
+PASS Settings UI renders: Magneto X-Gene
+PASS Settings UI renders: Dupes
+PASS Settings UI renders: Storm Gene Injector
+PASS Real isolated game save written
+SUITE COMPLETE

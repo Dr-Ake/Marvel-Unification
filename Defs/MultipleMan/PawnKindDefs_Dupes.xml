@@ -1,0 +1,20 @@
+﻿<Defs>
+  <PawnKindDef>
+    <defName>DupePawnKind</defName>
+    <label>dupe pawn</label>
+    <race>Human</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <combatPower>50</combatPower>
+    <initialResistanceRange>
+      <min>0</min>
+      <max>0</max>
+    </initialResistanceRange>
+    <initialWillRange>
+      <min>0</min>
+      <max>0</max>
+    </initialWillRange>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <minGenerationAge>18</minGenerationAge>
+    <maxGenerationAge>60</maxGenerationAge>
+  </PawnKindDef>
+</Defs>

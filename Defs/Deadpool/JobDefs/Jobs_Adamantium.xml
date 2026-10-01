@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <JobDef>
+    <defName>DP_UseAdamantiumChamber</defName>
+    <driverClass>DeadpoolsHealingFactor.JobDriver_UseAdamantiumChamber</driverClass>
+    <reportString>undergoing adamantium infusion.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <alwaysShowWeapon>false</alwaysShowWeapon>
+    <playerInterruptible>true</playerInterruptible>
+  </JobDef>
+  <JobDef>
+    <defName>DP_UseAdamantiumChamberWithClaws</defName>
+    <driverClass>DeadpoolsHealingFactor.JobDriver_UseAdamantiumChamber</driverClass>
+    <reportString>undergoing adamantium infusion with claws.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <alwaysShowWeapon>false</alwaysShowWeapon>
+    <playerInterruptible>true</playerInterruptible>
+  </JobDef>
+</Defs>
+
+

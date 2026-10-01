@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Nightcrawler.TeleportToggle_Label>BAMF!!</Nightcrawler.TeleportToggle_Label>
+  <Nightcrawler.TeleportToggle_Desc>Instantly blink to destinations instead of walking when enabled.</Nightcrawler.TeleportToggle_Desc>
+  <NightcrawlerTeleportation.InjectorInvalidPawn>Only living flesh pawns can use this injector.</NightcrawlerTeleportation.InjectorInvalidPawn>
+  <NightcrawlerTeleportation.InjectorApplied>Injected: {0}</NightcrawlerTeleportation.InjectorApplied>
+  <NightcrawlerTeleportation.InjectorAlreadyHas>Already has: {0}</NightcrawlerTeleportation.InjectorAlreadyHas>
+</LanguageData>

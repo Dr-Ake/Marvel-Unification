@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <CyclopsVisorPlacedInInventory>{PAWN_labelShort}'s ruby-quartz control visor was placed in their inventory because it conflicts with currently worn apparel.</CyclopsVisorPlacedInInventory>
+  <CyclopsVisorPlacedNearby>{PAWN_labelShort}'s ruby-quartz control visor was placed nearby.</CyclopsVisorPlacedNearby>
+  <CyclopsGeneControllerDescription>Optic attacks generate shared strain. Strain recovers by {0} per second.</CyclopsGeneControllerDescription>
+  <CyclopsOpticStrain>Optic strain</CyclopsOpticStrain>
+  <CyclopsOpticStrainTooltip>All optic attacks share this strain reserve. An attack is disabled when it would exceed 100 strain. Recovery: {0} per second.</CyclopsOpticStrainTooltip>
+  <CyclopsRequiresGene>Requires the Cyclops gene.</CyclopsRequiresGene>
+  <CyclopsRequiresVisor>Requires a worn ruby-quartz control visor.</CyclopsRequiresVisor>
+  <CyclopsTooMuchStrain>Too much optic strain.</CyclopsTooMuchStrain>
+  <CyclopsInvalidTarget>Select a different target cell.</CyclopsInvalidTarget>
+  <CyclopsOpticAttackTooltip>{0}
+Optic strain: {1}</CyclopsOpticAttackTooltip>
+  <CyclopsPulseDamageTooltip>Damage per pulse: {0} × {1}</CyclopsPulseDamageTooltip>
+  <CyclopsConeDamageTooltip>Maximum center damage: {0}; falls with distance and angle</CyclopsConeDamageTooltip>
+
+  <CyclopsSettingsBasicHeader>Basic optic blast</CyclopsSettingsBasicHeader>
+  <CyclopsSettingsWarmup>Warmup: {0} seconds</CyclopsSettingsWarmup>
+  <CyclopsSettingsCooldown>Cooldown: {0} seconds</CyclopsSettingsCooldown>
+  <CyclopsSettingsDamage>Damage: {0}</CyclopsSettingsDamage>
+  <CyclopsSettingsBasicRange>Range: {0} cells</CyclopsSettingsBasicRange>
+  <CyclopsSettingsAdvancedHeader>Advanced optic attacks</CyclopsSettingsAdvancedHeader>
+  <CyclopsSettingsRapidDamage>Volley damage per pulse: {0}</CyclopsSettingsRapidDamage>
+  <CyclopsSettingsRapidPulses>Volley pulse count: {0}</CyclopsSettingsRapidPulses>
+  <CyclopsSettingsRapidWarmup>Volley warmup: {0} seconds</CyclopsSettingsRapidWarmup>
+  <CyclopsSettingsRapidCooldown>Volley cooldown: {0} seconds</CyclopsSettingsRapidCooldown>
+  <CyclopsSettingsRapidRange>Volley range: {0} cells</CyclopsSettingsRapidRange>
+  <CyclopsSettingsFocusedDamage>Focused-beam damage per pulse: {0}</CyclopsSettingsFocusedDamage>
+  <CyclopsSettingsFocusedWarmup>Focused-beam warmup: {0} seconds</CyclopsSettingsFocusedWarmup>
+  <CyclopsSettingsFocusedDuration>Focused-beam duration: {0} seconds</CyclopsSettingsFocusedDuration>
+  <CyclopsSettingsFocusedCooldown>Focused-beam cooldown: {0} seconds</CyclopsSettingsFocusedCooldown>
+  <CyclopsSettingsFocusedRange>Focused-beam range: {0} cells</CyclopsSettingsFocusedRange>
+  <CyclopsSettingsConeDamage>Full-aperture maximum damage: {0}</CyclopsSettingsConeDamage>
+  <CyclopsSettingsConeWarmup>Full-aperture warmup: {0} seconds</CyclopsSettingsConeWarmup>
+  <CyclopsSettingsConeRange>Full-aperture range: {0} cells</CyclopsSettingsConeRange>
+  <CyclopsSettingsConeAngle>Full-aperture angle: {0} degrees</CyclopsSettingsConeAngle>
+  <CyclopsSettingsConeCooldown>Full-aperture cooldown: {0} seconds</CyclopsSettingsConeCooldown>
+  <CyclopsSettingsUtilityHeader>Strain, leadership, and visor</CyclopsSettingsUtilityHeader>
+  <CyclopsSettingsRecovery>Strain recovery: {0} per second</CyclopsSettingsRecovery>
+  <CyclopsSettingsLeadership>Enable command-presence aura</CyclopsSettingsLeadership>
+  <CyclopsSettingsLeadershipTooltip>Nearby same-faction humanlikes gain +5% global work speed and -5% aiming delay while the Cyclops carrier is awake.</CyclopsSettingsLeadershipTooltip>
+  <CyclopsSettingsLeadershipRadius>Command-presence radius: {0} cells</CyclopsSettingsLeadershipRadius>
+  <CyclopsSettingsVisorDependency>Require the visor for advanced attacks</CyclopsSettingsVisorDependency>
+  <CyclopsSettingsVisorDependencyTooltip>Disabled by default. When enabled, humanlike gene carriers receive one visor and must wear it to use optic volley, focused beam, or full-aperture blast. When disabled, every optic attack works without the visor.</CyclopsSettingsVisorDependencyTooltip>
+  <CyclopsResetToDefaults>Reset to defaults</CyclopsResetToDefaults>
+</LanguageData>

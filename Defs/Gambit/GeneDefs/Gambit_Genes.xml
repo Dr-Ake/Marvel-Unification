@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <GeneDef>
+    <defName>Gambit_XGene</defName>
+    <label>Gambit x-gene</label>
+    <description>An unstable xenogene that manifests as an endless deck of volatile cards, empowering touch charges, explosive throws, and kinetic melee detonations.</description>
+    <geneClass>GambitXGene.Genes.Gene_GambitXGene</geneClass>
+    <iconPath>UI/Icons/Genes/Gene_Pyromaniac</iconPath>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <displayCategory>Ability</displayCategory>
+    <selectionWeight>0</selectionWeight>
+  </GeneDef>
+</Defs>

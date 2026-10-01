@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_PhoenixFlash</defName>
+    <graphicData>
+      <texPath>Things/Mote/PsionicFlash</texPath>
+      <shaderType>MoteGlow</shaderType> 
+      <color>(255, 0, 255, 180)</color> 
+    </graphicData>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <solidTime>0.2</solidTime>
+      <fadeOutTime>0.6</fadeOutTime>
+      <growthRate>2.0</growthRate> 
+    </mote>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_PsionicBlast</defName>
+    <graphicData>
+      <texPath>Things/Mote/PowerBeam</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>3.0</drawSize>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <solidTime>0.1</solidTime>
+      <fadeOutTime>0.5</fadeOutTime>
+      <growthRate>5.0</growthRate>
+    </mote>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_PsionicSmoke</defName>
+    <graphicData>
+      <texPath>Things/Mote/Splash</texPath>
+      <drawSize>2.0</drawSize>
+      <color>(100, 100, 100, 150)</color>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <solidTime>0.2</solidTime>
+      <fadeOutTime>1.0</fadeOutTime>
+      <growthRate>2.0</growthRate>
+    </mote>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_PhoenixResurrection</defName>
+    <graphicData>
+      <texPath>Things/Mote/PhoenixResurrection</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>5.0</drawSize>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.2</fadeInTime>
+      <solidTime>2.0</solidTime>
+      <fadeOutTime>2.0</fadeOutTime>
+      <growthRate>0.5</growthRate>
+    </mote>
+  </ThingDef>
+</Defs>

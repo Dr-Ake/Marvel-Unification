@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AbilityDef>
+    <defName>Gambit_TouchCharge</defName>
+    <label>touch-charge</label>
+    <description>Places a charged card directly on an adjacent cell or object and detonates it moments later.</description>
+    <iconPath>UI/Gambit/TouchCharge</iconPath>
+    <cooldownTicksRange>120</cooldownTicksRange>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.3</warmupTime>
+      <range>1.2</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>true</canTargetBuildings>
+        <canTargetSelf>false</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityEffect">
+        <compClass>GambitXGene.Abilities.CompAbilityEffect_TouchCharge</compClass>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Gambit_ThrowCard</defName>
+    <label>throw card</label>
+    <description>Throws a single explosive card at any visible target, consuming one card from the deck.</description>
+    <iconPath>UI/Gambit/ThrowCard</iconPath>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.2</warmupTime>
+      <range>32</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>true</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityEffect">
+        <compClass>GambitXGene.Abilities.CompAbilityEffect_ThrowCard</compClass>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Gambit_52CardPickup</defName>
+    <label>52-card pickup</label>
+    <description>Unleashes every remaining card at the selected target cell, rapidly volleying explosions until the deck is empty.</description>
+    <iconPath>UI/Gambit/FiftyTwoPickup</iconPath>
+    <cooldownTicksRange>360</cooldownTicksRange>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.6</warmupTime>
+      <range>32</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>true</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityEffect">
+        <compClass>GambitXGene.Abilities.CompAbilityEffect_52CardPickup</compClass>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Gambit_KineticToggle</defName>
+    <label>kinetic melee</label>
+    <description>Toggles kinetic detonations on every successful melee strike.</description>
+    <abilityClass>GambitXGene.Abilities.Ability_KineticToggle</abilityClass>
+    <iconPath>UI/Gambit/KineticToggle</iconPath>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <targetRequired>false</targetRequired>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>1.0</range>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityEffect">
+        <compClass>GambitXGene.Abilities.CompAbilityEffect_KineticToggle</compClass>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

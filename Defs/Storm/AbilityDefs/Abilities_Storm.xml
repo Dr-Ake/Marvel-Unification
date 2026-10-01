@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AbilityDef>
+    <defName>Storm_SummonStorm</defName>
+    <label>summon storm</label>
+    <description>Summons a massive thunderstorm that lasts for a day. The storm will persist even in biomes where it shouldn't.</description>
+    <jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <iconPath>UI/Abilities/SummonStorm</iconPath> <!-- Custom icon -->
+    <warmupStartSound>Interact_BeatFire</warmupStartSound>
+    <abilityClass>Rimworld_Storm.Ability_StormControl</abilityClass>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>0.9</range>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <!--
+    <comps>
+      <li Class="Rimworld_Storm.CompProperties_SummonStorm" />
+    </comps>
+    -->
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Storm_CallLightning</defName>
+    <label>call lightning</label>
+    <description>Calls down a lightning bolt at the target location.</description>
+    <jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>True</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <iconPath>UI/Abilities/CallLightning</iconPath> <!-- Custom icon -->
+    <warmupStartSound>Interact_BeatFire</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>24.9</range>
+      <targetParams>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimworld_Storm.CompProperties_CallLightning" />
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>Storm_SummonTornado</defName>
+    <label>summon tornado</label>
+    <description>Summons a tornado at the target location.</description>
+    <jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>True</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <iconPath>UI/Abilities/SummonTornado</iconPath> <!-- Custom icon -->
+    <warmupStartSound>Interact_BeatFire</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>24.9</range>
+      <targetParams>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Rimworld_Storm.CompProperties_SummonTornado" />
+    </comps>
+  </AbilityDef>
+</Defs>

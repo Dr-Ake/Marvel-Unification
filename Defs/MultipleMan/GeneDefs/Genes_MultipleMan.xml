@@ -1,0 +1,14 @@
+﻿<Defs>
+  <GeneDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>MM_MultipleManGene</defName>
+    <label>multiple man gene</label>
+    <description>This unstable x-gene lets a pawn spawn temporary dupe copies of themselves.</description>
+    <displayCategory>Archite</displayCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <biostatArc>1</biostatArc>
+    <displayOrderInCategory>500</displayOrderInCategory>
+    <geneClass>Gene</geneClass>
+    <iconPath>Things/Item/MultipleMan/MultipleManInjector</iconPath>
+  </GeneDef>
+</Defs>

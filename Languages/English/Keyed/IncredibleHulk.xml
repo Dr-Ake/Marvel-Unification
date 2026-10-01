@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <HulkSettingsCategory>Incredible Hulk</HulkSettingsCategory>
+  <HulkSettingsEnableGammaHealing>Enable Gamma Healing</HulkSettingsEnableGammaHealing>
+  <HulkSettingsHealOutsideHulkForm>Allow healing outside Hulk form</HulkSettingsHealOutsideHulkForm>
+  <HulkSettingsCureDiseases>Cure diseases and chronic conditions</HulkSettingsCureDiseases>
+  <HulkSettingsRemovePermanentInjuries>Remove scars and permanent injuries</HulkSettingsRemovePermanentInjuries>
+  <HulkSettingsRegrowMissingParts>Regrow missing body parts</HulkSettingsRegrowMissingParts>
+  <HulkSettingsProtectPregnancy>Protect pregnancy-related hediffs</HulkSettingsProtectPregnancy>
+  <HulkSettingsAutoResurrect>Auto-resurrect after death</HulkSettingsAutoResurrect>
+  <HulkSettingsEnableGreenDoorReturn>Use Green Door return when the body is gone</HulkSettingsEnableGreenDoorReturn>
+  <HulkSettingsGreenDoorDelayHours>Green Door delay</HulkSettingsGreenDoorDelayHours>
+  <HulkSettingsGreenDoorOpenDelayHours>Door stays closed for</HulkSettingsGreenDoorOpenDelayHours>
+  <HulkSettingsGreenDoorRecoveryComaHours>Recovery coma duration</HulkSettingsGreenDoorRecoveryComaHours>
+  <HulkSettingsTriggerHostileCarryRage>Trigger Hulk rage on hostile carry/kidnap attempts</HulkSettingsTriggerHostileCarryRage>
+  <HulkSettingsConfigureHealingFilter>Configure Healing Filter</HulkSettingsConfigureHealingFilter>
+  <HulkSettingsExcludedHediffs>Excluded Hediffs: {0}</HulkSettingsExcludedHediffs>
+  <HulkSettingsResetDefaults>Reset Hulk Defaults</HulkSettingsResetDefaults>
+  <HulkSettingsSectionHealing>Healing and Recovery</HulkSettingsSectionHealing>
+  <HulkSettingsSectionAppearance>Hulk Appearance</HulkSettingsSectionAppearance>
+  <HulkSettingsSectionCombat>Combat Tuning</HulkSettingsSectionCombat>
+  <HulkSettingsSectionAbilities>Ability Tuning</HulkSettingsSectionAbilities>
+  <HulkSettingsSectionTimers>Transformation Timers</HulkSettingsSectionTimers>
+  <HulkSettingsChooseHulkColor>Choose Hulk Color</HulkSettingsChooseHulkColor>
+  <HulkSettingsClearAllHulkColors>Clear All Hulk Color Overrides</HulkSettingsClearAllHulkColors>
+  <HulkSettingsNoActiveGame>Load a save to customize Hulk colors.</HulkSettingsNoActiveGame>
+  <HulkSettingsNoEligibleHulkColorPawns>No gamma colonists are currently spawned on a player home map.</HulkSettingsNoEligibleHulkColorPawns>
+  <HulkSettingsHulkColorSummary>Eligible gamma colonists: {0}. Custom Hulk colors: {1}.</HulkSettingsHulkColorSummary>
+  <HulkSettingsMoveSpeedMultiplier>Move Speed Multiplier</HulkSettingsMoveSpeedMultiplier>
+  <HulkSettingsCarryCapacityMultiplier>Carry Capacity Multiplier</HulkSettingsCarryCapacityMultiplier>
+  <HulkSettingsMeleeHitChanceMultiplier>Melee Hit Chance Multiplier</HulkSettingsMeleeHitChanceMultiplier>
+  <HulkSettingsMeleeDamageMultiplier>Melee Damage Multiplier</HulkSettingsMeleeDamageMultiplier>
+  <HulkSettingsMeleeSpeedMultiplier>Melee Speed Multiplier</HulkSettingsMeleeSpeedMultiplier>
+  <HulkSettingsMeleeDodgeMultiplier>Melee Dodge Multiplier</HulkSettingsMeleeDodgeMultiplier>
+  <HulkSettingsToughnessMultiplier>Toughness Multiplier</HulkSettingsToughnessMultiplier>
+  <HulkSettingsRegenerationMultiplier>Regeneration Multiplier</HulkSettingsRegenerationMultiplier>
+  <HulkSettingsClapRadiusMultiplier>Clap Radius Multiplier</HulkSettingsClapRadiusMultiplier>
+  <HulkSettingsClapPawnDamageMultiplier>Clap Pawn Damage Multiplier</HulkSettingsClapPawnDamageMultiplier>
+  <HulkSettingsClapStructureDamageMultiplier>Clap Structure Damage Multiplier</HulkSettingsClapStructureDamageMultiplier>
+  <HulkSettingsLeapRadiusMultiplier>Leap Slam Radius Multiplier</HulkSettingsLeapRadiusMultiplier>
+  <HulkSettingsLeapPawnDamageMultiplier>Leap Slam Pawn Damage Multiplier</HulkSettingsLeapPawnDamageMultiplier>
+  <HulkSettingsLeapStructureDamageMultiplier>Leap Slam Structure Damage Multiplier</HulkSettingsLeapStructureDamageMultiplier>
+  <HulkSettingsBoulderThrowRangeMultiplier>Boulder Throw Range Multiplier</HulkSettingsBoulderThrowRangeMultiplier>
+  <HulkSettingsBoulderImpactRadiusMultiplier>Boulder Impact Radius Multiplier</HulkSettingsBoulderImpactRadiusMultiplier>
+  <HulkSettingsBoulderImpactDamageMultiplier>Boulder Impact Damage Multiplier</HulkSettingsBoulderImpactDamageMultiplier>
+  <HulkSettingsEnableForcedHulkRevert>Enable Forced Hulk Revert</HulkSettingsEnableForcedHulkRevert>
+  <HulkSettingsEnableTimeRestrictedHulk>Enable Time Restricted Hulk</HulkSettingsEnableTimeRestrictedHulk>
+  <HulkSettingsTimeRestrictedHulkDuration>Manual Hulk Duration</HulkSettingsTimeRestrictedHulkDuration>
+  <HulkSettingsSecondsFormat>{0} sec</HulkSettingsSecondsFormat>
+  <HulkSettingsHoursFormat>{0} in-game hours</HulkSettingsHoursFormat>
+  <HulkSettingsGreenDoorSummary>If a gamma host dies off-map or their body is destroyed, the Green Door can manifest later on a colony map and bring them back instead of letting them vanish forever.</HulkSettingsGreenDoorSummary>
+  <HulkSettingsTimerSummary>Forced Hulk Revert only applies to emergency rage states and shows a countdown bar. Time Restricted Hulk only applies to manual transforms and shows remaining time on the Hulk hediff.</HulkSettingsTimerSummary>
+  <HulkSettingsSummary>Gamma healing is intentionally aggressive. By default it only runs in Hulk form, though you can opt into all-form healing. It heals open injuries, can strip permanent scars, cure disease-like/chronic conditions such as asthma, regrow missing parts, auto-resurrect into a revenge Hulk, and now includes full combat/ability tuning plus optional transformation timers.</HulkSettingsSummary>
+
+  <HulkHealingFilterSearch>Search</HulkHealingFilterSearch>
+  <HulkHealingFilterInfo>Checked = Hulk will try to heal, remove, or regrow it. Unchecked = blocked by the filter. Reset restores Hulk's default exclusion list. Nothing here is hard-locked.</HulkHealingFilterInfo>
+  <HulkHealingFilterAllowVisible>Allow Visible</HulkHealingFilterAllowVisible>
+  <HulkHealingFilterExcludeVisible>Exclude Visible</HulkHealingFilterExcludeVisible>
+  <HulkHealingFilterResetAll>Reset All</HulkHealingFilterResetAll>
+  <HulkHealingFilterDefaultRow>{0} - reset default: {1}</HulkHealingFilterDefaultRow>
+  <HulkHealingFilterProtectedRow>{0} - locked: {1}</HulkHealingFilterProtectedRow>
+  <HulkHealingFilterInvalid>(invalid)</HulkHealingFilterInvalid>
+  <HulkHealingFilterCore>Core</HulkHealingFilterCore>
+  <HulkColorSelectorTitle>Select A Gamma Colonist</HulkColorSelectorTitle>
+  <HulkColorSelectorInfo>Choose which gamma colonist gets a Hulk skin color override.</HulkColorSelectorInfo>
+  <HulkColorDialogTitle>Choose Hulk Color For {0}</HulkColorDialogTitle>
+  <HulkColorPresetInfo>Pick one of the preset Hulk colors. The first swatch restores default green.</HulkColorPresetInfo>
+  <HulkColorCurrentStatusDefault>Current: default green</HulkColorCurrentStatusDefault>
+  <HulkColorCurrentStatusCustom>Current: override color</HulkColorCurrentStatusCustom>
+  <HulkColorStatusDefault>Default green</HulkColorStatusDefault>
+  <HulkColorStatusCustom>Override color</HulkColorStatusCustom>
+  <HulkColorDefault>Default</HulkColorDefault>
+  <HulkColorChoose>Choose</HulkColorChoose>
+  <HulkColorClear>Clear</HulkColorClear>
+
+  <HulkHealingSkipInvalid>invalid hediff</HulkHealingSkipInvalid>
+  <HulkHealingSkipInternal>internal Hulk hediff</HulkHealingSkipInternal>
+  <HulkHealingSkipMissingParts>missing parts are left alone</HulkHealingSkipMissingParts>
+  <HulkHealingSkipAddedParts>prosthetics and implants are preserved</HulkHealingSkipAddedParts>
+  <HulkHealingSkipPregnancy>pregnancy-related condition</HulkHealingSkipPregnancy>
+  <HulkHealingSkipNotHarmful>not a harmful hediff</HulkHealingSkipNotHarmful>
+  <HulkHealingSkipNotHealable>not an injury or disease-like hediff</HulkHealingSkipNotHealable>
+
+  <HulkMoteTransform>HULK!</HulkMoteTransform>
+  <HulkMoteClap>CLAP!</HulkMoteClap>
+  <HulkMoteSlam>SLAM!</HulkMoteSlam>
+  <HulkMoteGreenDoor>GREEN DOOR</HulkMoteGreenDoor>
+  <HulkMoteGreenDoorReturn>HULK RETURNS!</HulkMoteGreenDoorReturn>
+  <HulkForcedTimerLabel>Forced Hulk Revert</HulkForcedTimerLabel>
+  <HulkForcedTimerDuration>Reverting in {0}</HulkForcedTimerDuration>
+  <HulkManualTimerInspect>Manual Hulk time remaining: {0}</HulkManualTimerInspect>
+
+  <HulkMessageTooEnragedToRevert>Hulk is too enraged to revert right now.</HulkMessageTooEnragedToRevert>
+  <HulkMessageChooseStandableDestination>Choose a standable destination on the current map.</HulkMessageChooseStandableDestination>
+  <HulkMessageChooseThrowTarget>Choose a target within Hulk's throwing range.</HulkMessageChooseThrowTarget>
+  <HulkMessageNothingToSmash>Nothing was close enough to smash.</HulkMessageNothingToSmash>
+  <HulkGreenDoorManifestMessage>A gamma anomaly has opened on the colony map. The Green Door is waiting for {0}.</HulkGreenDoorManifestMessage>
+  <HulkGreenDoorReturnMessage>{0} steps back through the Green Door.</HulkGreenDoorReturnMessage>
+  <HulkGreenDoorRecoveryMessage>{0} collapses into a gamma recovery coma.</HulkGreenDoorRecoveryMessage>
+
+  <HulkCommandRevertLabel>Return to Human Form</HulkCommandRevertLabel>
+  <HulkCommandRevertDesc>Force the transformation to collapse back into the host's normal human form.</HulkCommandRevertDesc>
+  <HulkCommandLeapLabel>Gamma Leap</HulkCommandLeapLabel>
+  <HulkCommandLeapDesc>Choose a landing cell anywhere on the current map and slam into it.</HulkCommandLeapDesc>
+  <HulkCommandClapLabel>Hulk Clap</HulkCommandClapLabel>
+  <HulkCommandClapDesc>Detonate a massive shockwave that obliterates nearby pawns, items, plants, and structures.</HulkCommandClapDesc>
+  <HulkCommandBoulderLabel>Boulder Throw</HulkCommandBoulderLabel>
+  <HulkCommandBoulderDesc>Rip up a massive chunk of debris and hurl it across the map.</HulkCommandBoulderDesc>
+  <HulkCommandTransformLabel>Transform into Hulk</HulkCommandTransformLabel>
+  <HulkCommandTransformDesc>Release the Hulk at full strength.</HulkCommandTransformDesc>
+
+  <HulkDebugSelectPawnFirst>Select a pawn first.</HulkDebugSelectPawnFirst>
+  <HulkDebugGreenDoorNeedsLivingGammaPawn>Select a living gamma pawn to use the Green Door debug actions.</HulkDebugGreenDoorNeedsLivingGammaPawn>
+  <HulkDebugGreenDoorNoTarget>Select a gamma pawn, select a gamma corpse, or start a Green Door test first.</HulkDebugGreenDoorNoTarget>
+  <HulkDebugGreenDoorAutoResurrectDisabled>Enable auto-resurrect before starting a Green Door test.</HulkDebugGreenDoorAutoResurrectDisabled>
+  <HulkDebugGreenDoorReturnDisabled>Enable Green Door return before starting a Green Door test.</HulkDebugGreenDoorReturnDisabled>
+  <HulkDebugGreenDoorTestAlreadyPending>{0} already has a pending Green Door return.</HulkDebugGreenDoorTestAlreadyPending>
+  <HulkDebugGreenDoorTestCorpseMissing>{0} died, but no corpse was available for the Green Door test.</HulkDebugGreenDoorTestCorpseMissing>
+  <HulkDebugGreenDoorTestScheduleFailed>{0} died, but the Green Door return was not scheduled.</HulkDebugGreenDoorTestScheduleFailed>
+  <HulkDebugGreenDoorTestStarted>Green Door test started for {0}. Their corpse was destroyed and the return is now pending.</HulkDebugGreenDoorTestStarted>
+  <HulkDebugGreenDoorForcePendingMissing>No pending Green Door return was found for {0}.</HulkDebugGreenDoorForcePendingMissing>
+  <HulkDebugGreenDoorForceFailed>The pending Green Door return for {0} could not be accelerated right now.</HulkDebugGreenDoorForceFailed>
+  <HulkDebugGreenDoorForceSuccess>The Green Door for {0} will manifest immediately.</HulkDebugGreenDoorForceSuccess>
+
+  <HulkSerumNoPawnSelected>No pawn was selected for the gamma serum.</HulkSerumNoPawnSelected>
+  <HulkSerumCannotAdministerDead>Gamma serum cannot be administered to a dead pawn.</HulkSerumCannotAdministerDead>
+  <HulkSerumOnlyLivingHumanlikes>Only living organic humanlike pawns can receive gamma serum.</HulkSerumOnlyLivingHumanlikes>
+  <HulkSerumAlreadyBonded>{0} is already gamma bonded.</HulkSerumAlreadyBonded>
+  <HulkSerumNowBonded>{0} is now gamma bonded.</HulkSerumNowBonded>
+  <HulkSerumSurgerySuccess>{0} survived the gamma serum and can now become Hulk.</HulkSerumSurgerySuccess>
+</LanguageData>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>Magneto_MagnetoInjector</defName>
+    <label>magneto gene injector</label>
+    <description>A single-use injector that grafts Magneto's magnetic manipulation gene into the recipient.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Magneto/MagnetoInjector</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>25</Steel>
+      <Plasteel>15</Plasteel>
+      <Gold>5</Gold>
+    </costList>
+    <statBases>
+      <MarketValue>4200</MarketValue>
+      <Mass>0.2</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+      <MaxHitPoints>50</MaxHitPoints>
+    </statBases>
+    <tradeability>All</tradeability>
+    <tradeTags>
+      <li>ExoticMisc</li>
+      <li>TechSpecialty</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Artifacts</li>
+    </thingCategories>
+    <stackLimit>1</stackLimit>
+    <selectable>true</selectable>
+    <useHitPoints>false</useHitPoints>
+    <altitudeLayer>Item</altitudeLayer>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Usable">
+        <useLabel>inject</useLabel>
+      </li>
+      <li Class="MagnetoXGene.CompProperties_UseEffectGiveMagnetism">
+        <hediffDef>Magneto_Magnetism</hediffDef>
+        <severity>1</severity>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Unfinished_MagnetoInjector</defName>
+    <label>unfinished magneto injector</label>
+    <thingClass>UnfinishedThing</thingClass>
+    <category>Item</category>
+    <selectable>true</selectable>
+    <useHitPoints>false</useHitPoints>
+    <stackLimit>1</stackLimit>
+    <thingCategories>
+      <li>Unfinished</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedComponent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Magneto_ProjectileOrbitItem</defName>
+    <label>magnetized payload</label>
+    <thingClass>MagnetoXGene.Projectile_MagnetoItem</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <speed>65</speed>
+      <damageAmountBase>0</damageAmountBase>
+      <stoppingPower>4</stoppingPower>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>Magneto_OrbitingVisual</defName>
+    <label>magnetic orbiting visual</label>
+    <thingClass>MagnetoXGene.OrbitingMagnetThing</thingClass>
+    <category>Item</category>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>false</useHitPoints>
+    <selectable>false</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <drawOffscreen>true</drawOffscreen>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </ThingDef>
+</Defs>

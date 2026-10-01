@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>JG_PhoenixSerum</defName>
+    <label>Phoenix Force serum</label>
+    <description>A swirling, volatile vial of archotech nanites suspended in hyper-charged psychic fluid. Injection binds the subject to a high-frequency psionic wavelength.</description>
+    <graphicData>
+      <texPath>Things/Item/Drug/PhoenixSerum/PhoenixInjector</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <MarketValue>3500</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Processed</foodType>
+      <baseIngestTicks>100</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>JG_PhoenixForce</hediffDef>
+          <severity>1.0</severity>
+          <doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+        <li>MedicineProduction</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <costList>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Plasteel>50</Plasteel>
+      <Gold>20</Gold>
+      <Neutroamine>30</Neutroamine>
+      <MedicineUltratech>2</MedicineUltratech>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

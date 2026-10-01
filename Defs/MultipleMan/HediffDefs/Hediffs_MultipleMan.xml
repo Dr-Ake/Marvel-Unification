@@ -1,0 +1,16 @@
+﻿<Defs>
+  <HediffDef>
+    <defName>MM_MultipleManGeneHediff</defName>
+    <label>Multiple Man gene</label>
+    <description>This pawn carries the Multiple Man gene and can create temporary duplicates of themselves.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.4, 0.8, 1)</defaultLabelColor>
+    <isBad>false</isBad>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <stages>
+      <li>
+        <label>activated</label>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

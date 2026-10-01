@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <HediffDef>
+    <defName>DP_HealingFactor</defName>
+    <defaultLabelColor>(0.3, 0.7, 0.7)</defaultLabelColor>
+    <description>You're probably thinking, 'My colonist just got turned into a kebab!' Well, I may be super, but I'm no hero. This healing factor means I can regenerate from pretty much anything. Now, where are the chimichangas?</description>
+    <label>Healing Factor</label>
+    <isBad>false</isBad>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <stages>
+      <li>
+        <label>Healing Factor</label>
+        <painFactor>0.0</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>1.1</postFactor>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>1.1</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>1.1</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>DP_regrowing</defName>
+    <defaultLabelColor>(0.15, 0.6, 0.2)</defaultLabelColor>
+    <description>This body part is regrowing. Give it a minute.</description>
+    <isBad>false</isBad>
+    <label>Regrowing</label>
+    <stages>
+      <li>
+        <label>stitching</label>
+        <becomeVisible>true</becomeVisible>
+        <partEfficiencyOffset>-1.0</partEfficiencyOffset>
+      </li>
+      <li>
+        <label>growing</label>
+        <becomeVisible>true</becomeVisible>
+        <partEfficiencyOffset>-1.0</partEfficiencyOffset>
+        <minSeverity>0.1</minSeverity>
+      </li>
+      <li>
+        <label>shaping</label>
+        <becomeVisible>true</becomeVisible>
+        <partEfficiencyOffset>-0.75</partEfficiencyOffset>
+        <minSeverity>0.5</minSeverity>
+      </li>
+      <li>
+        <label>developing</label>
+        <becomeVisible>true</becomeVisible>
+        <partEfficiencyOffset>-0.5</partEfficiencyOffset>
+        <minSeverity>0.75</minSeverity>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef ParentName="DiseaseBase">
+    <defName>DP_adjusting</defName>
+    <defaultLabelColor>(0.75, 1, 0.75)</defaultLabelColor>
+    <description>The brand-new part is settling in. It'll be fine tomorrow.</description>
+    <label>Adjusting</label>
+    <stages>
+      <li>
+        <partEfficiencyOffset>-0.1</partEfficiencyOffset>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>
+          <min>20000</min>
+          <max>60000</max>
+        </disappearsAfterTicks>
+      </li>
+    </comps>
+  </HediffDef>
+</Defs>

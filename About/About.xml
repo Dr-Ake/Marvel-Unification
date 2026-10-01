@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Marvel Unification</name>
+  <author>Dr-Ake</author>
+  <packageId>DrAke.MarvelUnification</packageId>
+  <supportedVersions><li>1.6</li></supportedVersions>
+  <modDependencies>
+    <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
+    <li><packageId>ludeon.rimworld.biotech</packageId><displayName>Biotech</displayName></li>
+  </modDependencies>
+  <loadAfter><li>brrainz.harmony</li><li>ludeon.rimworld.biotech</li></loadAfter>
+  <incompatibleWith>
+    <li>DrAke.CyclopsXGene</li><li>DrAke.DeadpoolsHealingFactor</li><li>DrAke.gambitxgene</li><li>drake.hulk</li><li>DrAke.JeanGreyPhoenixForce</li><li>DrAke.MagnetoGene</li><li>DrAke.multipleman.dupes</li><li>ProjectSuperpowers.NightcrawlerTeleportation</li><li>DrAke.StormGeneInjector</li>
+  </incompatibleWith>
+  <description>Combines Cyclops, Deadpool and Wolverine, Gambit, Incredible Hulk, Jean Grey and the Phoenix Force, Magneto, Multiple Man, Nightcrawler, and Storm in one mod. Retains their original powers, items, crafting recipes, balance, and character settings. Requires Harmony and Biotech for the existing gene systems. Disable the individual source mods when using Marvel Unification.</description>
+</ModMetaData>

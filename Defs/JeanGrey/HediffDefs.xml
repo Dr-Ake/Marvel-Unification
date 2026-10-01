@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>JG_PhoenixForce</defName>
+    <hediffClass>JeanGreyMod.Hediff_Phoenix</hediffClass>
+    <label>Phoenix Force</label>
+    <description>The subject acts as a conduit for a cosmic psionic entity.</description>
+    <defaultLabelColor>(255, 120, 0)</defaultLabelColor>
+    <isBad>false</isBad>
+    <maxSeverity>5.0</maxSeverity>
+    <stages>
+      <li>
+        <minSeverity>0.1</minSeverity>
+        <label>Awakening</label>
+        <capMods>
+          <li><capacity>Consciousness</capacity><offset>0.1</offset></li>
+          <li><capacity>Manipulation</capacity><offset>0.2</offset></li>
+        </capMods>
+        <statOffsets>
+          <Flammability>-1.0</Flammability>
+          <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+          <ComfyTemperatureMax>100</ComfyTemperatureMax>
+        </statOffsets>
+        <damageFactors>
+          <Flame>0</Flame>
+          <Burn>0</Burn>
+        </damageFactors>
+      </li>
+      <li>
+        <minSeverity>1.0</minSeverity>
+        <label>Phoenix</label>
+        <capMods>
+          <li><capacity>Consciousness</capacity><offset>0.5</offset></li>
+          <li><capacity>Moving</capacity><offset>0.4</offset></li>
+          <li><capacity>Sight</capacity><offset>0.5</offset></li>
+        </capMods>
+        <painFactor>0.5</painFactor>
+        <statOffsets>
+          <Flammability>-1.0</Flammability>
+          <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+          <ComfyTemperatureMax>100</ComfyTemperatureMax>
+        </statOffsets>
+        <damageFactors>
+          <Flame>0</Flame>
+          <Burn>0</Burn>
+        </damageFactors>
+      </li>
+      <li>
+        <minSeverity>2.0</minSeverity>
+        <label>Dark Phoenix</label>
+        <capMods>
+          <li><capacity>Consciousness</capacity><offset>1.0</offset></li>
+          <li><capacity>Moving</capacity><offset>0.8</offset></li>
+        </capMods>
+        <totalBleedFactor>0.0</totalBleedFactor>
+        <statOffsets>
+          <PsychicSensitivity>5.0</PsychicSensitivity>
+          <GlobalLearningFactor>2.0</GlobalLearningFactor>
+          <Flammability>-1.0</Flammability>
+          <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+          <ComfyTemperatureMax>100</ComfyTemperatureMax>
+        </statOffsets>
+        <damageFactors>
+          <Flame>0</Flame>
+          <Burn>0</Burn>
+        </damageFactors>
+      </li>
+    </stages>
+    <comps>
+      <li Class="JeanGreyMod.HediffCompProperties_Resurrection" />
+      <li Class="JeanGreyMod.HediffCompProperties_PsionicShield" />
+    </comps>
+  </HediffDef>
+  
+  <HediffDef>
+    <defName>JG_PhoenixCooldown</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Phoenix cooldown</label>
+    <description>The subject is recovering from a resurrection event. The Phoenix Force is dormant.</description>
+    <isBad>true</isBad>
+    <initialSeverity>1.0</initialSeverity>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.5</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <capMods>
+          <li><capacity>Consciousness</capacity><offset>-0.2</offset></li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

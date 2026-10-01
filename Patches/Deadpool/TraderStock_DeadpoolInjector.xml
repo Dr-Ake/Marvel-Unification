@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <!-- Add injector to any trader kind that already sells Advanced Components (ComponentSpacer) -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/TraderKindDef[.//thingDef='ComponentSpacer']/stockGenerators</xpath>
+    <value>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>DP_HealingInjector</thingDef>
+        <countRange>
+          <min>0</min>
+          <max>1</max>
+        </countRange>
+      </li>
+    </value>
+  </Operation>
+</Patch>
+
+
+
