@@ -1,12 +1,12 @@
 param([string]$OutputFile)
 $ErrorActionPreference='Stop'
 $modRoot=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
-if(!$OutputFile){$OutputFile=Join-Path $modRoot 'Releases\Marvel-Unification-Handoff.zip'}
+if(!$OutputFile){$OutputFile=Join-Path $modRoot 'Releases\Marvel-Unification.zip'}
 New-Item -ItemType Directory -Path ([IO.Path]::GetDirectoryName($OutputFile)) -Force | Out-Null
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-$relativeFiles=@('README.md','NOTICE.md','LICENSE','.gitignore','Source\Build.ps1','Source\Package.ps1','Source\MarvelUnification.csproj','Source\Validation\Run.ps1','Source\Validation\LiveSuite.cs','Source\Validation\Audit.py')
-$folders=@('About','Assemblies','Defs','Languages','Patches','Sounds','Textures','Source\Modules','Source\Shared','Source\Properties','Source\Documentation')
+$relativeFiles=@('README.md','NOTICE.md','LICENSE','.gitignore','Source\Build.ps1','Source\Package.ps1','Source\MarvelUnification.csproj')
+$folders=@('About','Assemblies','Defs','Languages','Patches','Sounds','Textures','Source\Modules','Source\Shared','Source\Properties')
 foreach($folder in $folders){
     $base=Join-Path $modRoot $folder
     if(Test-Path -LiteralPath $base){$relativeFiles+=@(Get-ChildItem -LiteralPath $base -Recurse -File | ForEach-Object {$_.FullName.Substring($modRoot.Length+1)})}
